@@ -5,13 +5,16 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "node",
+            "name": "Launch Chrome",
             "request": "launch",
-            "name": "Launch Program",
-            "skipFiles": [
-                "<node_internals>/**"
+            "type": "chrome",
+            "runtimeExecutable": "canary",
+            "runtimeArgs": [
+                "-auto-open-devtools-for-tabs",
+                "-incognito"
             ],
-            "program": "${workspaceFolder}\\apps\\test\\index.js"
+            "url": "http://localhost:5173",
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }
