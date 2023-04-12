@@ -1,7 +1,7 @@
-import Button from './button.vue'
+import Button from "./src/button.vue";
 
 export const MyButton = {
-    install(app){
-        app.component('MyButton', Button)
-    }
-}
+  install(app) {
+    app.component("MyButton", Button);
+  },
+};
