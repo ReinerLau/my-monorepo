@@ -2,7 +2,6 @@
   "name": "my-monorepo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "turbo run lint",
@@ -13,6 +12,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "turbo": "^1.8.8"
+    "@vue/test-utils": "^2.3.2",
+    "turbo": "^1.8.8",
+    "vitest": "^0.30.1"
   }
 }
