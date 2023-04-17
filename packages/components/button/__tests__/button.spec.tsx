@@ -4,7 +4,7 @@ import Button from "../src/button.vue";
 
 describe("Button.vue", () => {
   it("create", () => {
-    const wrapper = mount(()=><Button/>);
-    expect(wrapper.classes()).toContain("test");
+    const wrapper = mount(() => <Button type="primary" />);
+    expect(wrapper.classes()).toContain("el-button--primary");
   });
 });
