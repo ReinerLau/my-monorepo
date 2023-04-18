@@ -9,10 +9,10 @@ const props = defineProps<{
   type?: string;
 }>();
 
-const cls = _bem(props.type);
+const cls = _bem("button", props.type);
 
-function _bem(modifier?: string) {
-  let cls = "el-button";
+function _bem(block: string, modifier?: string) {
+  let cls = `el-${block}`;
   if (modifier) {
     cls += `--${modifier}`;
   }
