@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/lodash": "^4.14.194",
     "@vitejs/plugin-vue": "^4.1.0",
     "@vitejs/plugin-vue-jsx": "^3.0.1",
     "@vue/test-utils": "^2.3.2",
@@ -19,5 +20,9 @@
     "turbo": "^1.8.8",
     "vitest": "^0.30.1",
     "vue": "^3.2.47"
+  },
+  "dependencies": {
+    "hooks": "workspace:*",
+    "lodash": "^4.17.21"
   }
 }

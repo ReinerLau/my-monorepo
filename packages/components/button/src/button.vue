@@ -6,9 +6,8 @@
 
 <script setup lang="ts">
 import { useNamespace } from "hooks";
-const props = defineProps<{
-  type?: string;
-}>();
+import { buttonProps } from "./button";
 
+const props = defineProps(buttonProps);
 const ns = useNamespace("button");
 </script>
